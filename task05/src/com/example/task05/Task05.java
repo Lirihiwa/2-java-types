@@ -3,10 +3,16 @@ package com.example.task05;
 public class Task05 {
 
     public static String solution(int x) {
+        while(x > 0){
+            int partOfX = x % 10;
+            x = x / 10;
 
-        // TODO напишите здесь свою корректную реализацию этого метода, вместо сеществующей
-
-        return "FALSE";
+            if(partOfX % 2 != 0){
+                return "FALSE";
+            }
+        }
+        
+        return "TRUE";
     }
 
     public static void main(String[] args) {
