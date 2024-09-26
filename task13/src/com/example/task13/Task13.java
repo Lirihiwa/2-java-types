@@ -5,17 +5,16 @@ public class Task13 {
     public static char toUpperCase(char c) {
 
         // TODO привести букву к верхнему регистру
+        int unicode = (int) c - 32;
+        char upperCase = (char) unicode;
 
-        return c;
+        return upperCase;
     }
 
     public static void main(String[] args) {
-        // Здесь вы можете вручную протестировать ваше решение, вызывая реализуемый метод и смотря результат
-        // например вот так:
-        /*
-        char result = solution('x');
+        char result = toUpperCase('x');
         System.out.println(result);
-         */
+
     }
 
 }
